@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  cursor: none;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+.scoreboard {
+  text-align: center;
+}
+
+.hammer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  z-index: 1;
+  pointer-events: none;
+  transform-origin: bottom;
+  transition: transform 0.2s;
+}
+
+.summary {
+  text-align: center;
+}
+
+.hammer-bang {
+  transform: rotate(-50deg);
+}
+
+#time-left {
+  display: none;
+}
+
+#board {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.level-button {
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.summary {
+  display: none;
+}
+
+.summary > button {
+  background-color: rgb(38, 82, 185);
+  margin-top: 15px;
+}
+
+.lvl-easy {
+  background-color: rgb(4, 174, 4);
+}
+
+.lvl-medium {
+  background-color: orange;
+}
+
+.lvl-hard {
+  background-color: red;
+}
+
+.hole {
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  height: 110px;
+  width: 110px;
+}
+
+.beaver {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  position: absolute;
+  transition: all 0.1s;
+}
+
+.hidden-beaver {
+  /* bottom: -90px; */
+  margin-top: 110px;
+  left: 0;
+}
+
+.row {
+  display: flex;
+  gap: 40px;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-top: 30px;
+}

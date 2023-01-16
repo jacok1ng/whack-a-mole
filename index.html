@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whack a mole</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <audio src="./assets/ouch.mp3"></audio>
+    <img src="./assets/hammer.png" class="hammer" alt="" />
+    <header>
+      <div class="scoreboard">
+        <h3><span id="score">Wybierz poziom trudności</span></h3>
+        <h4><span id="time-left">Pozostały czas: 60s</span></h4>
+      </div>
+    </header>
+    <main>
+      <div id="board"></div>
+      <div class="summary">
+        <h2><span id="end-score">Udało ci się zdobyć 10 punktów!</span></h2>
+        <button id="restart-btn" class="level-button">Restart</button>
+      </div>
+      <div class="levels">
+        <ul>
+          <li><span class="level-button lvl-easy">Łatwy</span></li>
+          <li><span class="level-button lvl-medium">Średni</span></li>
+          <li><span class="level-button lvl-hard">Trudny</span></li>
+        </ul>
+      </div>
+    </main>
+    <footer><i>Created by Eryk Dąbek &copy;</i></footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
